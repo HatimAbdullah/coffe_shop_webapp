@@ -79,7 +79,7 @@ def create_drink(payload):
 
         drink = Drink()
         drink.title = drink_raw['title']
-        drink.recipe = json.dumps(drink_recipe)  # convert object to a string
+        drink.recipe = json.dumps(drink_recipe) 
         drink.insert()
 
     except:
